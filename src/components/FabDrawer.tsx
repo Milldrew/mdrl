@@ -9,7 +9,12 @@ import { useSpring, animated } from "@react-spring/web";
  * @remarks: pass the same type of object you would pass to a style prop to fabStyles and drawerStyles.
  * Pass an array of jsx elements to the menuItems prop, the link needs to be a part of the jsx element
  */
-export function FabDrawer(props) {
+type FabDrawerProps = {
+  menuItems: String[] | JSX.Element[];
+  drawerStyles: Object;
+  fabStyles: Object;
+};
+export function FabDrawer(props: FabDrawerProps) {
   const [menuItems, setMenuItems] = useState(
     props.menuItems || ["Home", "Projects", "Contact"]
   );
