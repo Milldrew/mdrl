@@ -6,6 +6,4 @@
  * @remarks: pass the same type of object you would pass to a style prop to fabStyles and drawerStyles.
  * Pass an array of jsx elements to the menuItems prop, the link needs to be a part of the jsx element
  */
-declare function FabDrawer(props: any): JSX.Element;
-
-export { FabDrawer };
+export declare function FabDrawer(props: any): JSX.Element;

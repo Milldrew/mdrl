@@ -1,2 +1,2 @@
-import Foo from "./components";
-export const Bar = Foo;
+export * from "./components/FabDrawer";
+export * from "./components/index";
