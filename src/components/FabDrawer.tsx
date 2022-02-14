@@ -3,12 +3,12 @@ import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 type FabDrawerProps = {
-  menuItems: string[] | JSX.Element[] | undefined;
-  drawerStyles: React.CSSProperties | undefined;
-  fabStyles: React.CSSProperties | undefined;
-  listStyles: React.CSSProperties | undefined;
-  listItemStyles: React.CSSProperties | undefined;
-  hamburgerProps: { size?: number; color?: string } | undefined;
+  menuItems?: string[] | JSX.Element[] | undefined;
+  drawerStyles?: React.CSSProperties | undefined;
+  fabStyles?: React.CSSProperties | undefined;
+  listStyles?: React.CSSProperties | undefined;
+  listItemStyles?: React.CSSProperties | undefined;
+  hamburgerProps?: { size?: number; color?: string } | undefined;
 };
 /**
  * @props: menuItems = navigational links
