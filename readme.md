@@ -4,7 +4,7 @@ Components :
 
 <ul>
 <li>
- FabDrawer
+ FabDrawer: a floating action button that open and closes a navigation drawer.
 </li>
 </ul>
 
