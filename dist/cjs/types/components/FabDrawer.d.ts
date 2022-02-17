@@ -1,11 +1,11 @@
 import React from "react";
 declare type FabDrawerProps = {
-    menuItems: string[] | JSX.Element[] | undefined;
-    drawerStyles: React.CSSProperties | undefined;
-    fabStyles: React.CSSProperties | undefined;
-    listStyles: React.CSSProperties | undefined;
-    listItemStyles: React.CSSProperties | undefined;
-    hamburgerProps: {
+    menuItems?: string[] | JSX.Element[] | undefined;
+    drawerStyles?: React.CSSProperties | undefined;
+    fabStyles?: React.CSSProperties | undefined;
+    listStyles?: React.CSSProperties | undefined;
+    listItemStyles?: React.CSSProperties | undefined;
+    hamburgerProps?: {
         size?: number;
         color?: string;
     } | undefined;
