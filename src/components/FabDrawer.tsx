@@ -56,7 +56,14 @@ export function FabDrawer(props: FabDrawerProps | undefined) {
     /*menuItems changes from stings to elements*/
     setMenuItems(
       menuItems.map((item, index) => {
-        return <ListItem key={index}>{item}</ListItem>;
+        return (
+          <ListItem
+            listItemStyles={props.listItemStyles}
+            key={index.toString()}
+          >
+            {item}
+          </ListItem>
+        );
       })
     );
   }, ["menuItems"]);
@@ -128,7 +135,7 @@ export function FabDrawer(props: FabDrawerProps | undefined) {
 
 function ListItem(props: {
   children: string | JSX.Element;
-  key: number;
+  key: string;
   listItemStyles: React.CSSProperties | undefined;
 }) {
   let style = {
@@ -140,8 +147,6 @@ function ListItem(props: {
   };
 
   return (
-    <li style={Object.assign(style, props.listItemStyles)} key={props.key}>
-      {props.children}
-    </li>
+    <li style={Object.assign(style, props.listItemStyles)}>{props.children}</li>
   );
 }
